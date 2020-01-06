@@ -1,0 +1,165 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #FAFAFA;
+}
+
+h1 {
+    color: #db3236;
+}
+
+h2 {
+    color: #4885ed;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.25;
+    color: #333333;
+}
+
+pre {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    color: #333333;
+    white-space: pre-wrap;
+}
+
+hr {
+    border: 0.5px solid #CCCCCC;
+}
+
+nav {
+    width: 100%;   
+    background-color: white;
+    box-shadow: 0px 1px 9px rgba(232,232,232, 0.5);
+    padding-bottom: 24px;
+}
+
+    nav ul {
+        list-style-type: none;
+        display: inline-flex;
+        margin: 0;
+        padding: 8px 0;
+    }
+
+.blue {
+    background-color: #4885ed !important;
+}
+
+.red {
+    background-color: #db3236 !important;
+}
+
+.yellow {
+    background-color: #f4c20d !important;
+}
+.green {
+    background-color: #3cba54 !important;
+}
+
+.nav-btn {
+    display: inline-block;
+    font-size: 18px;
+    padding: 7px 28px;
+    margin: 0 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    border: none;
+}
+
+    nav .nav-brand {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+#page {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#login {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.required {
+    color: red;
+}
+
+.container {
+    background-color: white;
+    box-shadow: 0 1px 9px rgba(232, 232, 232, 0.5);
+    border-radius: 4px;
+    padding: 20px 40px;
+}
+
+.form-control {
+    width: 100%;
+    background-color: #FAFAFA;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+.form-control-title {
+    width: 100%;
+    background-color: #FAFAFA;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 20px;
+}
+
+.form-label {
+    font-size: 14px;
+    margin-bottom:0;
+}
+
+.form-button {
+    width: 100%;
+    text-align: center;
+    background-color: #4885ed;
+    color: white;
+    border: 1px solid #4885ed;
+    border-radius: 4px;
+    padding: 8px 0;
+    cursor: pointer;
+}
+input.form-button:hover {
+    background-color: white !important;
+    color: #4885ed;
+}
+
+.col-70 {
+    width: calc(70% - 8px);
+    float: left;
+    margin-right: 8px
+}
+
+.col-30 {
+    width: calc(30% - 8px);
+    float: right;
+    margin-left: 8px;
+}
+
+.col-80 {
+    width: calc(80% - 8px);
+    float: left;
+    margin-right: 8px
+}
+
+.col-20 {
+    width: calc(20% - 8px);
+    float: right;
+    margin-left: 8px;
+}

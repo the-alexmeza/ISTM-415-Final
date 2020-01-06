@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Base.master.cs" Inherits="MasterPages_Base" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="../StyleSheets/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav>
+            <div class="nav-brand">
+                <img src="/Images/Boogle_logo.svg" height="140" />
+                <br />
+                <ul>
+                    <li>
+                        <a href="/Default.aspx" class="nav-btn red">Home</a>
+                    </li>
+                    <li>
+                        <a href="/Pages/Departments.aspx" class="nav-btn yellow">Departments</a>
+                    </li>
+                    <li>
+                        <a href="/Pages/Permissions.aspx" class="nav-btn green">Permissions</a>
+                    </li>
+                    <li>
+                        <% if (Session["UserID"] != null)
+                            { %>
+                        <asp:Button ID="Button1" Text="Sign Out" runat="server" OnClick="SignOut_Click" CssClass="nav-btn blue" />
+                        <% }
+                            else
+                            { %>
+                        <a href="/Pages/Login.aspx" class="nav-btn blue">Sign In</a>
+                        <%} %>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
